@@ -3,10 +3,9 @@ DOCUMENTATION
 Please refer also to the community documentation:
   http://drupal.org/node/1948260
 
-Pollaplon Chriseon
+Pollaplon Chriseon ('multi purpose' in Greek)
 ----------------------------------
-pollapló̱n chrí̱seo̱n = multi purpose
-This is a multipurpose Zurb Foundation [4] subtheme. Some points of note:
+This is a multipurpose Zurb Foundation [4] Drupal subtheme. Some points of note:
 - Relies on SCSS - compile SCSS to generate CSS files.
 - Includes reveal modal user login block.
 - Includes a slick topbar inset region to place blocks in topbar.
