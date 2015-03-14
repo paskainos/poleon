@@ -12,6 +12,7 @@ This is a multipurpose Zurb Foundation [4] Drupal subtheme. Some points of note:
 - Includes panels theme suggestions in template.php (i.e. page--panels.tpl.php).
 - Includes; reveal modal block & webform block templates in 'templates' folder.
 - Create 'footer menu' and place in 'footer links' region to make use of settings.
+- **NOTE:** modal blocks must be placed in 'modal blocks' region for use.
 
 BUILD A THEME WITH ZURB FOUNDATION
 ----------------------------------
