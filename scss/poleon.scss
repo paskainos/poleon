@@ -1,0 +1,193 @@
+/* @file
+ * This file is a custom file that loads all files. Each non-base layer
+ * can be disabled.
+ *
+ * Do not name this file, "app.scss". If you run a compass update this file can
+ * be wiped out with a compass update. By default, when a compass project is
+ * created the file will be named app.scss. Thus this file is named,
+ * THEMENAME.scss.
+ *
+ * This application file (THEMENAME.scss) is where all the partials are
+ * imported.
+ *
+ * Theme styles are categorized using SMACSS standards. They utilize
+ * categorization of styles into various categories. Those categories are the
+ * following:
+ *
+ * - Base: CSS reset/normalize plus HTML element styling.
+ * - Layout: Macro arrangement of a web page, including any grid systems.
+ * - Component: Dictate minor layout modules or reusable elements.
+ * - State: Describe the appearance of a module in various states.
+ * - Theme: Purely visual optional styling ("look-and-feel") for a component.
+ *
+ * For more information about this new Drupal css file standard, please review
+ * the following:
+ * - https://drupal.org/node/1887922
+ * - http://smacss.com/
+ */
+
+// Extras: import extras first for use in partials
+// CSS Box shadow - sample use: @include box-shadow(0px 0px 12px $dark-color inset);
+@import "compass/css3/box-shadow";
+// CSS Text shadow - sample use: @include single-text-shadow(rgba(#fff, .5), 0, 1px, 0);
+@import "compass/css3/text-shadow";
+// CSS Transition - sample use: @include single-transition(all, 300ms, ease-in-out, 0s);
+@import "compass/css3/transition";
+// CSS Images - sample use: see:
+  //http://compass-style.org/reference/compass/css3/images/
+  // http://compass-style.org/examples/compass/css3/gradient/
+@import "compass/css3/images";
+// CSS Border radius - sample use: @include border-radius(4px, 4px);
+@import "compass/css3/border-radius";
+
+// Base
+//
+// Init file contains required imports. Here's where we include normalize,
+// foundation and also compass.
+@import "base/init";
+// Import our mixins early so they can be used by other partials.
+@import "base/mixins";
+//
+// Common file is where you place common utility classes to extend or
+// parametrics. Optional file.
+@import "base/common";
+//
+// Fix for some Drupal CSS quirks (Drupalisms).
+@import "base/drupal";
+//
+// Styling for elements.
+@import "base/elements";
+//
+
+// Layout
+//
+// Each section of the document has it's own partial seperated out to improve
+// developer experience. Additionally, grids can be declared in layouts as well.
+@import "layout/header";
+@import "layout/main";
+@import "layout/aside";
+@import "layout/triptych";
+@import "layout/footer";
+
+// Components
+// @import "components/buttons";
+// @import "components/type";
+// @import "components/forms";
+// @import "components/foundation-icons";
+
+// Themes
+// @import "theme/button-light";
+
+// IE8 Grid Support
+//@import "ie";
+
+
+/* ============================================================================
+ * General styling - see also base/_elements.scss
+ * ========================================================================== */
+/* uncomment this to create a fixed position watermark background */
+//.page {
+//  position: relative;
+//}
+//#watermark-bg {
+//  background: url(../images/watermark.jpg) fixed no-repeat center center transparent;
+//  top: 0;
+//  left: 0;
+//  right: 0;
+//  bottom: 0;
+//  position: fixed;
+//  z-index: 0;
+//}
+
+
+/* ============================================================================
+ * Header region styling
+ * ========================================================================== */
+
+
+ /* ============================================================================
+ * Featured Top section styling
+ * ========================================================================== */
+
+
+/* ============================================================================
+ * Main Content region styling
+ * ========================================================================== */
+
+
+ /* ============================================================================
+ * Featured Bottom section styling
+ * ========================================================================== */
+
+
+/* ============================================================================
+ * Footer region styling
+ * ========================================================================== */
+
+
+/* ============================================================================
+ * Styling for various nodes, blocks & regions
+ * ========================================================================== */
+
+
+/* ============================================================================
+ * Additional Panels styling
+ * ========================================================================== */
+
+
+/* ============================================================================
+ * Additional Views styling
+ * ========================================================================== */
+
+
+/* ============================================================================
+ * Media queries
+ * ========================================================================== */
+/* Available Variables */
+// $small-screen: (i.e. em-calc(768))
+// $medium-screen: (i.e. em-calc(1280))
+// $large-screen: (i.e. em-calc(1440))
+// $topbar-breakpoint: (i.e. 940px) - uncomment in _variables.scss to use
+
+// $screen: "only screen";
+// $small: "only screen and (min-width:"#{$small-screen}")";
+// $medium: "only screen and (min-width:"#{$medium-screen}")";
+// $large: "only screen and (min-width:"#{$large-screen}")";
+// $landscape: "only screen and (orientation: landscape)";
+// $portrait: "only screen and (orientation: portrait)";
+
+/* Overrides for watermark bg MAX WIDTH 1000px; */
+//@media only screen and (max-width: 1000px) {
+//  #watermark-bg {
+//    background-size: contain;
+//  }
+//}
+
+/* Used to alter styles <= small screens (i.e. at most 768px wide). This is where the grid changes. */
+// @media only screen and (max-width:"#{$small-screen}") { }
+
+/* Used to alter styles <= medium screens (i.e. at most 1280px wide). */
+// @media only screen and (max-width:"#{$medium-screen}") { }
+
+/* Used to alter styles <= large screens (i.e. at most 1440px wide). */
+// @media only screen and (max-width:"#{$large-screen}") { }
+
+/* Used to alter styles => small screens (i.e. at least 768px wide). This is where the grid changes. */
+//@media #{$small} { }
+
+/* Used to alter styles => medium screens (i.e. at least 1280px wide). */
+//@media #{$medium} { }
+
+/* Used to alter styles => large screens (i.e. at most 1440px wide). */
+//@media #{$large} { }
+
+/* Apply styles to screens in landscape orientation */
+//@media #{$landscape} { }
+
+/* Apply styles to screens in portrait orientation */
+//@media #{$portrait} { }
+
+/* We also use Modernizr to add a .touch class to the body when applicable */
+/* You can prepend this class to anything and it will style only for touch devices */
+//.touch .your-element {}
+

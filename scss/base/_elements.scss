@@ -1,0 +1,196 @@
+// Elements
+//
+// Things to review before you write code here:
+// - Be sure to load after "foundation" import.
+// - Also, before adding styles be sure to modify variables in the
+//   "scss/_variables.scss" file. You may not need to write any code.
+
+// Headings
+//------------------------------------------
+// h1, h2, h3,
+// h4, h5, h6 {}
+
+// Anchors
+//-----------------------------------------------------------------------------
+// a {}
+
+// a:focus {}
+
+// a.active,
+// a:active,
+// a:hover {}
+
+// Form Input
+//-----------------------------------------------------------------------------
+// input[type="text"],
+// input[type="password"],
+// input[type="date"],
+// input[type="datetime"],
+// input[type="datetime-local"],
+// input[type="month"],
+// input[type="week"],
+// input[type="email"],
+// input[type="number"],
+// input[type="search"],
+// input[type="tel"],
+// input[type="time"],
+// input[type="url"],
+// textarea {
+// }
+
+
+// input[type="text"],
+// input[type="password"],
+// input[type="date"],
+// input[type="datetime"],
+// input[type="datetime-local"],
+// input[type="month"],
+// input[type="week"],
+// input[type="email"],
+// input[type="number"],
+// input[type="search"],
+// input[type="tel"],
+// input[type="time"],
+// input[type="url"],
+// textarea {
+
+// }
+
+// select {}
+
+
+/* ============================================================================
+ * CSS Hacks - these should be properly addressed, and fixed sooner or later.
+ * ========================================================================== */
+// Add classes for main colors
+.alert-color      { color: $alert-color; }
+.primary-color    { color: $primary-color; }
+.secondary-color  { color: $secondary-color; }
+.success-color    { color: $success-color; }
+
+//.top-bar-section ul li:before {
+//  display: none;
+//}
+
+
+/* ============================================================================
+ * ubiquitous light text-shadow, except .contextual-links & .button
+ * ========================================================================== */
+/* buttons */
+//.button.secondary, button.secondary,
+
+/* Foundation panels (not Drupal Panels) */
+//.panel blockquote cite,
+//.panel h1, .panel h2, .panel h3, .panel h4,
+//.panel h5, .panel h6, .panel p, .panel.callout .subheader,
+
+/* Regions */
+//.l-top-featured, .l-main, .l-bottom-featured,
+
+/* Headings */
+//.l-top-featured h1, .l-top-featured h2, .l-top-featured h3,
+//.l-top-featured h4, .l-top-featured h5, .l-top-featured h6,
+//.l-bottom-featured h1, .l-bottom-featured h2, .l-bottom-featured h3,
+//.l-bottom-featured h4, .l-bottom-featured h5, .l-bottom-featured h6,
+//.l-footer-top h1, .l-footer-top h2, .l-footer-top h3,
+//.l-footer-top h4, .l-footer-top h5, .l-footer-top h6,
+//.l-footer-main h1, .l-footer-main h2, .l-footer-main h3,
+//.l-footer-main h4, .l-footer-main h5, .l-footer-main h6 {
+//  @include single-text-shadow(rgba(#fff, .3), 0, 1px, 0);
+//}
+
+
+/* ============================================================================
+ * ubiquitous dark text-shadow, except .contextual-links
+ * ========================================================================== */
+/* buttons */
+//a.button:not(.secondary),
+
+/* general menu styling - expanded to link styling */
+//nav a, .menu a, ul a {
+a:not(.button) {
+  @include single-transition(all, 300ms, ease-in-out, 0s);
+}
+
+/* Foundation panels (not Drupal Panels) */
+//.panel.callout, .panel.callout blockquote cite,
+//.panel.callout h1, .panel.callout h2, .panel.callout h3,
+//.panel.callout h4, .panel.callout h5, .panel.callout h6,
+
+/* Menus */
+//ul.title-area, .top-bar #main-menu, .top-bar #secondary-menu,
+
+/* Regions */
+//.l-footer-top, .l-footer-main,
+
+/* Views */
+//.view-id-orbit_slider .orbit-caption *:not(.secondary) {
+//  @include single-text-shadow(rgba(#000, .4), -1px, -1px, 0);
+//}
+
+// Fix button line breaks in mobile
+//a.button, button {
+//  white-space: nowrap;
+//}
+
+/* add separation to data-clearing rows */
+//[data-clearing] li {
+//  margin-bottom: emCalc(10);
+//}
+
+/* list style mods - omit 'nav' elements */
+//main ol,
+//main ul,
+//footer ol,
+//footer ul {
+//  margin-left: 1em;
+//}
+
+/* misc styles */
+// Use this in parent element to center ul li's
+// per this post: css-tricks.com/centering-list-items-horizontally-slightly-trickier-than-you-might-think
+.center-list {
+  display: table;
+  margin: 0 auto;
+}
+
+/* remove all margins from li elements */
+.no-li-margin li {
+  margin: 0;
+}
+
+.round {
+  -webkit-border-radius: $global-rounded;
+  border-radius: $global-rounded;
+}
+
+.uppercase {
+  text-transform: uppercase;
+}
+
+.tight-bottom {
+  margin-bottom: 0 !important;
+}
+.tight-bottom:not(a.button) {
+  padding-bottom: 0 !important;
+}
+.tight-top {
+  margin-top: 0;
+}
+.tight-top:not(a.button) {
+  padding-top: 0;
+}
+
+
+/* ============================================================================
+ * Media queries
+ * ========================================================================== */
+/* Used to alter styles <= small screens (i.e. at most 768px wide). This is where the grid changes. */
+@media only screen and (max-width:"#{$small-screen}") {
+  // Use this in parent element to center ul li's in small
+  // per this post: css-tricks.com/centering-list-items-horizontally-slightly-trickier-than-you-might-think
+  .center-list-small {
+    display: table;
+    margin: 0 auto;
+  }
+}
