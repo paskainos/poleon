@@ -60,6 +60,33 @@
 
 
 /* ============================================================================
+ * Foundation style adjustments & mods
+ * ========================================================================== */
+/* keep mobile logo same height as topbar */
+//#nav-logo img {
+//  max-height: $topbar-height;
+//}
+/* fix clearing gallery disappearance: drupal.org/node/2162257 */
+.clearing-container {
+  position: static;
+}
+/* center clearing gallery thumbs */
+// Use this to center ul li's
+// per this post: css-tricks.com/centering-list-items-horizontally-slightly-trickier-than-you-might-think
+.clearing-assembled:not(.clearing-blackout) [data-clearing] {
+  text-align: center;
+}
+.clearing-assembled:not(.clearing-blackout) [data-clearing] li {
+  float: none;
+  display: inline-block;
+/* add bottom spacing to clearing gallery thumbs for responsive separation */
+  margin-bottom: 10px;
+/* add positioning for overlay position:absolute */
+  position: relative;
+}
+
+
+/* ============================================================================
  * CSS Hacks - these should be properly addressed, and fixed sooner or later.
  * ========================================================================== */
 // Add classes for main colors
