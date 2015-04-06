@@ -7471,17 +7471,39 @@ hr.sm-top-btm {
   text-transform: uppercase;
 }
 
-/* line 188, ../scss/base/_elements.scss */
+/* line 164, ../scss/base/_elements.scss */
+.vertical-align-parent {
+  -webkit-transform-style: preserve-3d;
+  -moz-transform-style: preserve-3d;
+  -webkit-transform-style: preserve-3d;
+  -moz-transform-style: preserve-3d;
+  -ms-transform-style: preserve-3d;
+  -o-transform-style: preserve-3d;
+  transform-style: preserve-3d;
+}
+
+/* line 173, ../scss/base/_elements.scss */
+.vertical-align {
+  position: relative;
+  top: 50%;
+  -webkit-transform: translateY(-50%);
+  -moz-transform: translateY(-50%);
+  -ms-transform: translateY(-50%);
+  -o-transform: translateY(-50%);
+  transform: translateY(-50%);
+}
+
+/* line 194, ../scss/base/_elements.scss */
 .clearing-container {
   position: static;
 }
 
-/* line 194, ../scss/base/_elements.scss */
+/* line 200, ../scss/base/_elements.scss */
 .clearing-assembled:not(.clearing-blackout) [data-clearing] {
   text-align: center;
 }
 
-/* line 197, ../scss/base/_elements.scss */
+/* line 203, ../scss/base/_elements.scss */
 .clearing-assembled:not(.clearing-blackout) [data-clearing] li {
   float: none;
   display: inline-block;
@@ -7489,7 +7511,7 @@ hr.sm-top-btm {
   position: relative;
 }
 
-/* line 240, ../scss/base/_elements.scss */
+/* line 246, ../scss/base/_elements.scss */
 a:not(.button) {
   -webkit-transition: all 300ms ease-in-out;
   -webkit-transition-delay: 0s;
@@ -7499,7 +7521,7 @@ a:not(.button) {
 }
 
 @media only screen and (max-width: 768px) {
-  /* line 267, ../scss/base/_elements.scss */
+  /* line 273, ../scss/base/_elements.scss */
   .center-list-small {
     display: table;
     margin: 0 auto;
