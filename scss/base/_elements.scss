@@ -169,8 +169,8 @@ hr.sm-top-btm {
 // to use: add line @extend %vertical-align-child; to child element(s)
 %vertical-align-child {
   position: relative;
-  top: 33%;
-  @include translateY(-33%);
+  top: 50%;
+  @include translateY(-50%);
 }
 
 
