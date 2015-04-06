@@ -1,5 +1,5 @@
-name = Pollaplon Chriseon
-description = From the Greek: pollapló̱n chrí̱seo̱n = multi purpose - a custom multipurpose <a href="http://drupal.org/project/zurb-foundation">Zurb Foundation [4]</a> base theme sub-theme by <a href="http://paskainos.com">Paskainos</a>. See README.md for details.
+name = Poleon
+description = Pollaplon Chriseon - from the Greek: pollapló̱n chrí̱seo̱n = multi purpose - a custom multipurpose <a href="http://drupal.org/project/zurb-foundation">Zurb Foundation [4]</a> base theme sub-theme by <a href="http://paskainos.com">Paskainos</a>. See README.md for details.
 screenshot = images/screenshot.png
 
 core = 7.x
